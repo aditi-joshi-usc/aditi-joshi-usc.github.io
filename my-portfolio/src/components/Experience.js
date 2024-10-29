@@ -11,19 +11,19 @@ const Experience = () => {
             title: 'University of Southern California, Los Angeles, CA',
             subtitle: 'Master of Science, Applied Data Science',
             icon: <SchoolIcon />,
-            period: 'Aug 2022 - May 2024'
+            period: 'Aug 2023 - May 2025'
         },
         {
-            title: 'Research Assistant (VIIT), Pune, MH, India',
-            subtitle: 'Worked on virtual try-on API for clothes by leveraging GANs',
+            title: 'Data Engineering Intern',
+            subtitle: 'Prototyped a generative AI Q&A text-to-SQL application using AWS services and LLMs',
             icon: <WorkIcon />,
-            period: 'May 2021 - May 2022'
+            period: 'June 2024 - Aug 2024'
         },
         {
-            title: 'Software Engineer - Blue Pearl Health Tech, Pune, MH, India',
-            subtitle: 'Enhanced Report Tracking System for healthcare teams',
+            title: 'Technology Analyst - Citigroup',
+            subtitle: 'Java, Angular, SQL development, created an end-to-end report monitoring tool',
             icon: <WorkIcon />,
-            period: 'Jan 2021 - Jul 2022'
+            period: 'Jul-2022 - Jul 2023'
         }
     ];
 
