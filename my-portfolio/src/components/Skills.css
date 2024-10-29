@@ -1,0 +1,29 @@
+/* src/components/Skills.css */
+.section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills-list span {
+    background: #e0e7ff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.skills-list span:hover {
+    background: #d1e2ff;
+}

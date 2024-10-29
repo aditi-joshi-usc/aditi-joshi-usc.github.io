@@ -1,0 +1,11 @@
+/* src/components/About.css */
+.section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
