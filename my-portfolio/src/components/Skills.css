@@ -1,29 +1,32 @@
 /* src/components/Skills.css */
-.section {
+
+.skills-section {
+    background-color: #f5f5f5; /* Light background to make cards pop */
     padding: 4rem 0;
-    text-align: center;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+.skill-card {
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #ffffff;
 }
 
-.skills-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.skills-list span {
-    background: #e0e7ff;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+.skill-icon {
+    margin-bottom: 10px;
 }
 
-.skills-list span:hover {
-    background: #d1e2ff;
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.skill-list li {
+    margin-bottom: 5px;
 }

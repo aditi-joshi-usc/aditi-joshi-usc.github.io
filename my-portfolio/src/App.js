@@ -1,6 +1,6 @@
 // src/App.js
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Header from './components/Header';
@@ -9,31 +9,40 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(false); // Light mode by default
 
     const theme = createTheme({
         palette: {
             mode: darkMode ? 'dark' : 'light',
             primary: {
-                main: '#4a90e2',
+                main: '#002147', // Dark navy
+            },
+            secondary: {
+                main: '#f4d03f', // Light gold for contrast
             },
             background: {
-                default: darkMode ? '#121212' : '#f5f5f5',
+                default: darkMode ? '#121212' : '#f9f9f9', // Light cream for light mode
                 paper: darkMode ? '#1e1e1e' : '#ffffff',
             },
             text: {
-                primary: darkMode ? '#ffffff' : '#333333',
+                primary: darkMode ? '#ffffff' : '#002147', // Dark blue for readability
             }
         },
         typography: {
-            fontFamily: 'Georgia, serif',
+            fontFamily: 'Lato, Arial, sans-serif',
             body1: {
                 fontSize: '1rem',
                 lineHeight: 1.7,
-            }
+            },
+            h2: {
+                fontWeight: 700,
+            },
+            h3: {
+                fontWeight: 600,
+            },
         }
     });
 
@@ -48,12 +57,13 @@ function App() {
                 <Header toggleDarkMode={toggleDarkMode} />
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/home" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/skills" element={<Skills />} />
                     <Route path="/experience" element={<Experience />} />
                     <Route path="/projects" element={<Projects />} />
-                    <Route path="/contact" element={<Contact />} />
                 </Routes>
+                <Footer />
             </Router>
         </ThemeProvider>
     );
