@@ -1,24 +1,58 @@
-/* src/components/Home.css */
-
 .home-section {
-    background: linear-gradient(120deg, #f4d03f 0%, #88d9e6 100%); /* Adds soft gradient to add depth */
-    color: #002147; /* Improved color contrast for readability */
-    padding: 4rem 0;
-  }
-  
-  .home-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  button {
-    transition: all 0.3s ease;
-  }
-  
-  button:hover {
-    transform: scale(1.05);
-    background-color: #002147;
-  }
-    
+  background: linear-gradient(135deg, #f4d03f 0%, #88d9e6 100%);
+  color: #002147;
+  padding: 6rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 2rem auto;
+  max-width: 700px;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #002147;
+  margin-bottom: 1rem;
+}
+.home-content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #002147;
+  margin-bottom: 1rem;
+}
+
+.home-content p {
+  font-size: 1.125rem;
+  color: #003366; /* Darker shade for better readability */
+  line-height: 1.6;
+  max-width: 600px; /* Limits the width for better readability */
+  margin: 0 auto 2rem;
+}
+
+button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #f4d03f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #002147;
+  color: #f4d03f;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

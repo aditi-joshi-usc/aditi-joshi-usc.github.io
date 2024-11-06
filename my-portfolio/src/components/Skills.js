@@ -13,7 +13,7 @@ const skills = [
     },
     {
         name: 'Machine Learning',
-        technologies: ['Scikit-learn', 'TensorFlow', 'Keras'],
+        technologies: ['Scikit-learn', 'Langchain', 'Pandas'],
         icon: <SiTensorflow size={40} color="#FF6F00" />,
     },
     {

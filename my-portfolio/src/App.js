@@ -10,6 +10,7 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
+import './App.css'; // Import CSS for flex layout
 
 function App() {
     const [darkMode, setDarkMode] = useState(false); // Light mode by default
@@ -53,18 +54,22 @@ function App() {
     return (
         <ThemeProvider theme={theme}>
             <CssBaseline />
-            <Router>
-                <Header toggleDarkMode={toggleDarkMode} />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/skills" element={<Skills />} />
-                    <Route path="/experience" element={<Experience />} />
-                    <Route path="/projects" element={<Projects />} />
-                </Routes>
-                <Footer />
-            </Router>
+            <div className="App"> {/* Main container for flex layout */}
+                <Router>
+                    <Header toggleDarkMode={toggleDarkMode} />
+                    <div className="main-content"> {/* Flex item to push footer down */}
+                        <Routes>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/home" element={<Home />} />
+                            <Route path="/about" element={<About />} />
+                            <Route path="/skills" element={<Skills />} />
+                            <Route path="/experience" element={<Experience />} />
+                            <Route path="/projects" element={<Projects />} />
+                        </Routes>
+                    </div>
+                    <Footer />
+                </Router>
+            </div>
         </ThemeProvider>
     );
 }

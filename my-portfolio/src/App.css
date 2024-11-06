@@ -60,3 +60,13 @@ h2 {
     color: #fff;
     margin-top: 2rem;
 }
+/* Ensures that the footer is at the bottom when content is short */
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+}
